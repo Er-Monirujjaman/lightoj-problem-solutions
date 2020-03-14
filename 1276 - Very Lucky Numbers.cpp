@@ -31,9 +31,9 @@ int main(){
     int s=v.size();
  
     num(0,1,s);
-
-    set<ll> st(lucky.begin(),lucky.end());
-    lucky.assign(st.begin(),st.end());
+ 
+    sort(lucky.begin(),lucky.end());
+    lucky.erase(unique( lucky.begin() , lucky.end() ) , lucky.end() );
  
     int t,cas=1;
     ll a,b;
@@ -48,6 +48,5 @@ int main(){
  
         cout<<"Case "<<cas++<<": "<<r-l<<endl;
     }
- 
  
 }
