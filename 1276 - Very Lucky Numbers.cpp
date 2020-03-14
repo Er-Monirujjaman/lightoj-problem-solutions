@@ -5,7 +5,8 @@ typedef long long ll;
 const ll lim=1e12;
 vector<ll>v;
 vector<ll>lucky;
- 
+
+
 void fun(ll n){
     if(n>lim) return;
     if(n!=0) v.push_back(n);
